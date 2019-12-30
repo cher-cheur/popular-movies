@@ -6,7 +6,6 @@ from datetime import date, timedelta
 import os
 from random import randint
 import colorsys
-import matplotlib.colors as mc
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import matplotlib.animation as animation
@@ -18,7 +17,7 @@ class dataera :
     def __init__(self, start_date, end_date):
         self.start_date = start_date
         self.end_date = end_date
-        self.directory = '/home/daata/Documents/Data Science/dataera/Popular Movies/' + str(start_date.year)
+        self.directory = '/[your directory]/' + str(start_date.year)
 
 
     def daterange(self):
@@ -92,12 +91,9 @@ class dataera :
         y = y[0]
         f.write('In this dataset, we handled ' + str(len(df)) + ' movie observations between ' + str(self.start_date) + ' and ' + str(self.end_date) + '\n' + 'What film had the biggest box office gross in ' + str(self.start_date.year) + '?' + '\n' + str(df['name'][y]) + ' distributed by ' + str(df['group'][y]) + ' had made $' + f'{x:,}' + '\n' + 'Here is the list of movie names you will see in this video' + '\n' +str(df['name'].unique().tolist()) )
 
-year = 1997
-while year != 1996 :
-    p = dataera(date(year, 1, 1), date(year,12,31))
+    p = dataera(date(1997, 1, 1), date(1997,12,31))
     p.createFolder()
     p.description()
     fig, ax = plt.subplots(figsize=(15, 8))
     animator = animation.FuncAnimation(fig, p.draw_barchart, frames = dataera(p.start_date - timedelta(1) , p.end_date + timedelta(4)).daterange(), save_count = p.count + 4)
     animator.save(p.directory + '/' + str(p.start_date)+ 'to' + str(p.end_date)+'.mp4', fps = 1, bitrate = 1800, savefig_kwargs={'facecolor':'#3A3A3A'})
-    year -= 1
