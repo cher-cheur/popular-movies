@@ -62,4 +62,7 @@ popular-movies/
 ├── images/               # Graphiques statiques générés (si applicable)
 └── descriptions/         # Fichiers de résumé et de description
 
-````
+## 🤝 Auteur
+
+Taha DAANOUN / ![cher-cheur @ GitHub](https://github.com/cher-cheur),
+![LinkedIn](https://www.linkedin.com/in/tahadaanoun/)
