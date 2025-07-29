@@ -1,0 +1,5 @@
+In this dataset, we handled 475 movie observations between 2000-12-01 and 2000-12-31.
+What film had the biggest box office gross in this period? 
+How the Grinch Stole Christmas distributed by Universal Pictures had made $251,628,905.
+Here is the list of movie names you will see in this video:
+['How the Grinch Stole Christmas', 'Unbreakable', '102 Dalmatians', "Charlie's Angels", 'Rugrats in Paris', 'Meet the Parents', 'The 6th Day', 'The Legend of Bagger Vance', 'What Lies Beneath', 'Bring It On', 'The Contender', 'Nutty Professor II: The Klumps', 'Vertical Limit', 'Proof of Life', 'Crouching Tiger, Hidden Dragon', 'What Women Want', 'Cast Away', 'Miss Congeniality', 'The Family Man', "The Emperor's New Groove", 'All the Pretty Horses', 'An Everlasting Piece']
