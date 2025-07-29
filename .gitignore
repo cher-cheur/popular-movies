@@ -1,0 +1,23 @@
+# Fichiers d'environnement Python
+.venv/
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Données générées
+data/raw/*.csv # Vos fichiers de données brutes
+data/processed/*.csv # Vos fichiers de données traitées
+
+# Sorties du projet
+output/
+*.mp4 # Vos vidéos de chart race
+*.txt # Vos fichiers de description
+*.png # Si vous générez des images statiques
+
+# Fichiers temporaires ou spécifiques à l'OS
+.DS_Store # macOS
+Thumbs.db # Windows
+*.ipynb_checkpoints/ # Checkpoints de Jupyter Notebook
